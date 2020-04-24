@@ -5,4 +5,15 @@
 
 var sum_to_n = function(n) {
     // your code here
+  var array = []
+  for (var i = 1; i <= n; i++) {
+    array.push(i);
+  }
+
+  sumofarray = function(arr){
+  return arr.reduce(function(a,b){
+    return a + b
+  }, 0);
+  }
+  return sumofarray(array)
 };
